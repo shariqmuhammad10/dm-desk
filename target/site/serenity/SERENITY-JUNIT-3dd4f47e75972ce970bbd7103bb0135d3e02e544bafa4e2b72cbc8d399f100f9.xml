@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="com.atex.features.author_login.LoginVerificationTest" skipped="0" tests="1" time="21.39" timestamp="2020-07-09 08:04:32"><testcase classname="com.atex.features.author_login.LoginVerificationTest" name="Verify unable to login"/></testsuite>

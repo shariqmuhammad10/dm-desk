@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="1" failures="0" name="com.atex.test.features.advanceSearch.AdvanceSearchTest" skipped="0" tests="1" time="51.47" timestamp="2020-06-03 11:32:41"><testcase classname="com.atex.test.features.advanceSearch.AdvanceSearchTest" name="Verify clear advance search"><error message="Expected condition failed: waiting for com.atex.test.actions.WaitActions$1@4e8b357d (tried for 30 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException">Expected condition failed: waiting for com.atex.test.actions.WaitActions$1@4e8b357d (tried for 30 second(s) with 500 milliseconds interval)</error><system-err>Expected condition failed: waiting for com.atex.test.actions.WaitActions$1@4e8b357d (tried for 30 second(s) with 500 milliseconds interval)&#13;
+com.atex.test.actions.WaitActions.waitUntilLoaded(WaitActions.java:28)&#13;
+com.atex.test.pages.login.advanceSearch.AdvanceSearchPage.clearAllSearchCriteria(AdvanceSearchPage.java:35)&#13;
+com.atex.test.steps.login_steps.advanceSearchSteps.AdvanceSearchSteps.clearSearch(AdvanceSearchSteps.java:31)&#13;
+com.atex.test.features.advanceSearch.AdvanceSearchTest.verifyClearAdvanceSearch(AdvanceSearchTest.java:37)&#13;
+</system-err></testcase></testsuite>

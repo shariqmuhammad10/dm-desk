@@ -1,0 +1,183 @@
+<html lang="en"><head><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}</style>
+    <meta charset="UTF-8">
+    <title>dm.desk</title>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+
+    <link rel="stylesheet" href="atex/onecms-theme/3.7.0/css/onecms-theme.css">
+    <link rel="stylesheet" href="webjars/font-awesome/4.2.0/css/font-awesome.min.css">
+
+
+    <link href="//fonts.googleapis.com/css?family=Roboto:100,200,300,400" rel="stylesheet" type="text/css">
+
+    <!--link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/css/material.min.css'-->
+    <!--link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootswatch/3.3.4/yeti/bootstrap.min.css'-->
+    <link rel="stylesheet" href="webjars/jquery-ui/1.10.3/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/all.css?v=159315983480237">
+    <link rel="stylesheet" href="webjars/angular-ui-select/0.11.2/select.css">
+    <link rel="stylesheet" href="webjars/select2/3.5.1/select2.css">
+    <link rel="stylesheet" href="webjars/select2/3.5.1/select2-bootstrap.css">
+    <link rel="stylesheet" href="webjars/Eonasdan-bootstrap-datetimepicker/4.7.14/bootstrap-datetimepicker.css">
+    <link href="lib/xeditable/xeditable.css?v=159315983480237" rel="stylesheet">
+    <link href="webjars/toastr/2.0.1/toastr.min.css" rel="stylesheet">
+
+    <link ui-css="" component-name="css-config" component-id="desk-css-config">
+  <style type="text/css"></style></head>
+
+  <body key-trap="" x-disable-drop="" class="modal-open">
+
+    <div class="page-container ng-scope" ng-controller="DamMainController" ng-show="show" ng-class="{'busy-cursor': busyCursor}">
+  
+    <div ng-controller="DamPollerController" class="ng-scope">
+
+    <div id="date-wrapper"></div>
+
+    <!-- ngInclude:  --><div ng-include="" src="'views/dam-header.html'" class="hidden-print ng-scope"><section id="dam-header" class="navbar navbar-default navbar-fixed-top ng-scope" x-ng-controller="DamHeaderController"><div class="container"><div class="navbar-header"><button id="search-button" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".act-navbar-collapse"><span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button> <a class="navbar-brand dam-brand-icon"><button type="button" ng-click="toggle();" class="navbar-toggle dam-menu-btn hidden-lg visible-md visible-sm visible-xs"><span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button> <img class="dam-home-icon hidden-sm hidden-xs" src="img/desk-logo.svg"></a><!-- ngIf: showmobile --></div><div class="collapse navbar-collapse act-navbar-collapse"><ul class="nav navbar-nav navbar-right clearfix dam-user-icon"><!-- ngIf: !showmobile --><li class="hidden-xs ng-scope" ng-if="!showmobile"><form class="navbar-form navbar-left search-input ng-pristine ng-valid" role="search"><div class="input-group"><span class="hidden-lg input-group-btn"><button type="button" dam-folders-popover="" popover-placement="bottom" class="btn btn-default" ng-disabled="querying" data-original-title="" title=""><i class="fa fa-folder"></i></button></span><div style="position:relative"><input ng-disabled="querying" ng-click="simpleSearchClicked()" ng-submit="search();$event.stopPropagation();" id="searchvalueinput" ng-model="params.searchvalue" class="form-control ng-pristine ng-untouched ng-valid" placeholder="_SEARCH_"><!--<span style="pointer-events:auto;cursor:pointer;line-height:32px;" ng-if="params.searchvalue" ng-click="clearSearch();$event.stopPropagation();" class="fa fa-close form-control-feedback"></span>--></div><span class="input-group-btn"><button id="simple-search" type="submit" ng-disabled="querying" class="btn btn-default" ng-click="search();$event.stopPropagation();"><i class="fa fa-search"></i></button> <!-- ngIf: show --> <button id="advanced-search" dam-adv-search-popover="" popover-placement="bottom" class="btn btn-default" ng-disabled="querying" data-original-title="" title=""><i class="fa fa-toggle-down" style=""></i></button></span></div></form></li><!-- end ngIf: !showmobile --><!-- ngIf: templates.length>0 --><li class="dropdown"><a class="dropdown-toggle ng-binding" data-toggle="dropdown"><i class="fa fa-user dam-text-icon"></i>Sysadmin<i class="caret"></i></a><ul class="dropdown-menu"><li><a onclick="return false;" x-ng-click="requestNotificationCenter();"><i class="fa fa-comments"></i> Notifications <span class="badge ng-binding">0</span></a></li><!-- ngIf: jobsEnabled --><!-- ngIf: publishingScheduleEnabled --><li ng-if="publishingScheduleEnabled" class="ng-scope"><a onclick="return false;" x-ng-click="showPublishingSchedules();" class="ng-binding"><i class="fa fa-calendar"></i> __MANAGE_PUBLISHING_SCHEDULES_DLG_TITLE__</a></li><!-- end ngIf: publishingScheduleEnabled --><li><a onclick="return false;" x-ng-click="showAuthor();" class="ng-binding"><i class="fa fa-at"></i> __AUTHORS_MANAGE__</a></li><li><a onclick="return false;" x-ng-click="showTwitterRoutes();" class="ng-binding"><i class="fa fa-twitter"></i> __TWITTER_TAGS__</a></li><li><a href="/polopoly" target="_blank" class="ng-binding"><i class="fa fa-key"></i> __OPEN_ADMIN_GUI__</a></li><li><a href="/" target="_blank" class="ng-binding"><i class="fa fa-globe"></i> __OPEN_WEB_GUI__</a></li><!-- ngIf: isAdmin --><li ng-if="isAdmin" class="ng-scope"><a onclick="return false;" x-ng-click="exportUICfg();" class="ng-binding"><i class="fa fa-plane"></i> __EXPORT_UI_CFG__</a></li><!-- end ngIf: isAdmin --><li><a onclick="return false;" x-ng-click="logout()" class="ng-binding">_LOGOUT_</a></li></ul></li><li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown"><span><!-- ngIf: flagsEnabled --> <!-- ngIf: !flagsEnabled --><i ng-if="!flagsEnabled" class="fa fa-globe dam-text-icon ng-scope"></i><!-- end ngIf: !flagsEnabled --></span><span class="dam-language-select ng-binding"></span> <i class="caret"></i></a><ul class="dropdown-menu dam-select"><!-- ngRepeat: lang in languages --></ul></li><li x-ng-class="{ 'hide': !hasFullscreen() }"><a class="fullscreen-toggle" x-ng-click="toggleFullscreen()"><i class="fa fa-arrows-alt fa-inverse"></i></a></li></ul></div></div></section></div>
+
+      <div class="row hidden-print">
+        <div class="col-md-12"><dam-page-planner class="ng-scope"><div ng-show="show" class="clearfix ng-hide"><div class="panel-body"><div ng-show="true" class="row panel-row"><div class="col-md-2"><button id="dam-pp-action-button" class="btn btn-default" type="button" ng-click="showPagePlan()" title="__PAGEPLAN_VIEW__"><i class="fa fa-columns"></i></button><!--div class="pull-left"--> <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="caret"></span> <span class="sr-only">Toggle Dropdown</span></button><ul class="dropdown-menu ul-preview"><li ng-click="toggleShowFit()"><span><i class="padding-variant fa fa-check hideCheckbox" ng-class="{'hideCheckbox': !settings.showFit}"></i>&nbsp;Show&nbsp;Fit</span></li><li ng-click="toggleShowStatus()"><span><i class="padding-variant fa fa-check hideCheckbox" ng-class="{'hideCheckbox': !settings.showStatus}"></i>&nbsp;Show&nbsp;Status</span></li><li ng-click="toggleShowWrap()"><span><i class="padding-variant fa fa-check hideCheckbox" ng-class="{'hideCheckbox': !settings.wrap}"></i>&nbsp;Show&nbsp;Wrap</span></li></ul><!--/div--><!--div class="btn-group pull-right"--> <span><a class="atm-zoom-slider" data-toggle="tooltip" data-placement="bottom" title="Zoom" ng-click="false"><input ng-model="size" id="slider1" type="range" name="range" min="100" max="1029" step="1" class="ng-pristine ng-untouched ng-valid"> </a></span><!--/div--><!--form class="navbar-form navbar-left search-input" role="search">
+            <div class="input-group">
+             <button id="advanced-search" dam-adv-search-popover popover-placement="bottom" class="btn btn-default" ng-disabled="querying"><i class="fa fa-toggle-down"></i></button>
+           </span>
+            </div>
+          </form--></div><div class="page-plan-wrapper col-md-10"><div class="page-plan" ng-style="{'max-height':maxHeight}" style="max-height: none;"><!-- ngRepeat: (key, entry) in entries --></div></div></div></div></div></dam-page-planner></div>
+      </div>
+
+      <div ng-class="{'main-row-fixed-height': mainRowFixedHeight}" id="dam-main-row" class="row hidden-print">
+      <div id="dam-right" class="col-md-12">
+        <div id="dam-top-row">
+          <!-- ngInclude:  --><div id="dam-menu" ng-class="toggle" ng-controller="DamLeftSideAnimation" class="visible-lg col-lg-2" ng-include="" src="'views/dam-left-side.html'"><div id="dam-left-side" ng-controller="DamLeftSideController" ng-init="icon='fa fa-thumb-tack close icon-size'" class="ng-scope"><accordion id="dam-left-accordion" close-others="false"><div class="panel-group" ng-transclude=""><div class="panel panel-default ng-isolate-scope" is-open="$parent.facetOpen">
+  <div class="panel-heading">
+    <h4 class="panel-title">
+      <a href="" class="accordion-toggle" ng-click="toggleOpen()" accordion-transclude="heading"><span class="ng-binding ng-scope">_FACET_</span></a>
+    </h4>
+  </div>
+  <div class="panel-collapse collapse" collapse="!isOpen" style="height: 0px;">
+	  <div class="panel-body" ng-transclude=""><accordion-heading class="ng-scope"></accordion-heading><!-- ngInclude:  --><div ng-include="" src="'views/dam-facet.html'" class="ng-scope"><div ng-controller="DamFacetController" class="ng-scope"><div><!-- ngRepeat: entry in facets --></div></div></div></div>
+  </div>
+</div><div class="visible-lg panel panel-default ng-isolate-scope" id="dam-folders-acc" is-open="$parent.foldersOpen" folders-heading-dragover="true">
+  <div class="panel-heading">
+    <h4 class="panel-title">
+      <a href="" class="accordion-toggle" ng-click="toggleOpen()" accordion-transclude="heading"><span class="ng-binding ng-scope">_FOLDERS_<i class="pull-right fa fa-folder" ng-click="reloadFolders(); $event.preventDefault(); $event.stopPropagation();"></i></span></a>
+    </h4>
+  </div>
+  <div class="panel-collapse collapse" collapse="!isOpen" style="height: 0px;">
+	  <div class="panel-body" ng-transclude=""><span ng-controller="DamFoldersController" class="ng-scope"><accordion-heading></accordion-heading><!-- ngInclude:  --><div ng-include="" src="'views/dam-folders.html'" class="ng-scope"><div id="dam-folders" drawer-dragover="true" class="ng-scope"><div id="dam-folders-buttons"><button type="button" class="query-options-button ng-hide" ng-show="showSpinner"><i class="fa fa-spinner fa-spin"></i></button><!--  Actions dropdown --><div ng-show="canEditFolder()" dam-fix-dropdown-pos="" class="dam-other-actions-dropdown btn dropdown ng-hide"><button class="btn btn-default dropdown-toggle dam-folders-actions-dropdown-btn" type="button" id="dropdownFoldersMenu" data-toggle="dropdown"><i class="fa fa-ellipsis-v dam-folder-menu"></i></button><ul class="dropdown-menu" role="menu" aria-labelledby="dropdownFoldersMenu"><li ng-show="canAddFolder(false)" class="ng-hide"><a><button class="btn btn-default ng-binding" ng-click="addFolder(false)"><i class="fa fa-plus"></i> __FOLDERS_CREATE_NEW_LABEL__</button></a></li><li ng-show="canAddFolder(true)" class="ng-hide"><a><button class="btn btn-default smart-folder-plus ng-binding" ng-click="addFolder(true)"><i class="fa fa-plus"></i> __FOLDERS_CREATE_NEW_SMART_LABEL__</button></a></li><li ng-show="canUploadToFolder()" class="ng-hide"><a label="__FOLDERS_UPLOAD__" allow-multiple="true" select-call-back="uploadFiles(files)" class="ng-isolate-scope"><button class="btn btn-default dam-browser-button ng-binding" ng-click="browse();"><i class="fa fa-upload"></i> __FOLDERS_UPLOAD__</button></a></li><li ng-show="canShare()" class="ng-hide"><a><button class="btn btn-default ng-binding" ng-click="shareFolder(true)"><i class="fa fa-share"></i> __FOLDERS_SHARE_LABEL__</button></a></li><li ng-show="canEditFolder()" class="ng-hide"><a><button class="btn btn-default ng-binding" ng-click="editFolder()"><i class="fa fa-edit"></i> __FOLDERS_EDIT_LABEL__</button></a></li><li ng-show="canExportFolder()" class="ng-hide"><a><button class="btn btn-default" ng-really-click="exportCopyFolder()"><i class="fa fa-plane"></i> Export</button></a></li><li ng-show="canCopyFolder()" class="ng-hide"><a><button class="btn btn-default" ng-really-click="exportCopyFolder(true)"><i class="fa fa-files-o"></i> Copy</button></a></li><li ng-show="canPasteFolder()" class="ng-hide"><a><button class="btn btn-default" ng-really-click="pasteFolder()"><i class="fa fa-clipboard"></i> Paste</button></a></li><li ng-show="canDeleteFolder()" class="ng-hide"><a><button class="btn btn-default ng-binding" ng-really-click="deleteFolder()" ng-really-message="_ASK_PROCEED_DELETE_"><i class="fa fa-trash-o"></i> __FOLDERS_DELETE_LABEL__</button></a></li></ul></div></div><dam-treeview data-model="DamFoldersService.treemodel" data-node-id="id" data-node-label="name" data-node-children="children" data-selected-callback="nodeSelected(node)" data-drop-callback="droppedOnNode(node, event)" data-expand-callback="expandNode(node)" data-list-callback="listNode(node)" data-hide-root="DamFoldersService.hideRoot" data-current-node="DamFoldersService.currentNode" class="ng-isolate-scope"><dam-treeview-inner data-model="model" data-node-id="id" data-node-label="name" data-node-children="children" class="ng-scope"><ul ng-class="{'hide-root':hideRoot===true}" class="ng-scope hide-root"><!-- ngRepeat: node in model | orderBy:'name' --></ul></dam-treeview-inner></dam-treeview></div></div></span></div>
+  </div>
+</div><div class="panel panel-default ng-isolate-scope" is-open="$parent.queryListOpen">
+  <div class="panel-heading">
+    <h4 class="panel-title">
+      <a href="" class="accordion-toggle" ng-click="toggleOpen()" accordion-transclude="heading"><span class="ng-binding ng-scope">_QUERY_LIST_<i class="pull-right fa fa-refresh" ng-click="reloadQueries(true); $event.preventDefault(); $event.stopPropagation();" title="__REFRESH__"></i></span></a>
+    </h4>
+  </div>
+  <div class="panel-collapse collapse" collapse="!isOpen" style="height: 0px;">
+	  <div class="panel-body" ng-transclude=""><span ng-controller="DamQueryListController" class="ng-scope"><accordion-heading></accordion-heading><!-- ngInclude:  --><div ng-include="" src="'views/dam-query-list.html'" class="ng-scope"><div class="dam-left-side-panel ng-scope" ng-init="show=true" id="dam-query-list"><!-- ngRepeat: (key,query) in queries --></div></div></span></div>
+  </div>
+</div><!-- ngIf: showCollections --><!-- ngIf: showCollections --><!-- ngIf: showScheduling --><div class="panel panel-default ng-isolate-scope" id="dam-schedules-acc" is-open="$parent.schedulingOpen" ng-if="showScheduling">
+  <div class="panel-heading">
+    <h4 class="panel-title">
+      <a href="" class="accordion-toggle" ng-click="toggleOpen()" accordion-transclude="heading"><span class="ng-binding ng-scope">_SCHEDULING_<i class="pull-right fa fa-calendar" ng-click="reloadSchedules(true); $event.preventDefault(); $event.stopPropagation();" title="__REFRESH__"></i></span></a>
+    </h4>
+  </div>
+  <div class="panel-collapse collapse" collapse="!isOpen" style="height: 0px;">
+	  <div class="panel-body" ng-transclude=""><span ng-controller="DamPublishingSchedulesPanelController" class="ng-scope"><accordion-heading></accordion-heading><!-- ngInclude:  --><div droppable="true" ng-include="" src="'views/dam-publishing-schedules-panel.html'" class="ng-scope"><div id="dam-schedules" style="height:300px" class="ng-scope"><!-- ngIf: view.type !== 'date' && selectedNode && selectedNode.value.isOwner && (selectedNode.isSchedule || selectedNode.value !== null) --><form style="padding-left:40px" class="ng-pristine ng-valid"><label class="ng-binding"><input type="radio" ng-model="view.type" value="publication" ng-change="reloadSchedules()" class="ng-pristine ng-untouched ng-valid" name="49"> __PUBLISHING_SCHEDULE_BY_PUBLICATION__</label> <label class="ng-binding"><input type="radio" ng-model="view.type" value="date" ng-change="reloadSchedules()" class="ng-pristine ng-untouched ng-valid" name="50"> __PUBLISHING_SCHEDULE_BY_DATE__</label> <button type="button" class="query-options-button" ng-show="showSpinner"><i class="fa fa-spinner fa-spin"></i></button></form><!-- ngIf: view.type === 'date' --><div style="float:left;"><dam-treeview data-model="treemodel" data-node-id="id" data-node-label="name" data-node-children="children" data-selected-callback="nodeSelected(node)" data-drop-callback="droppedOnNode(node, event)" data-expand-callback="expandNode(node)" data-list-callback="listNode(node)" data-hide-root="hideRoot" data-current-node="currentNode" data-ordering-enabled="data.orderingEnabled" class="ng-isolate-scope"><dam-treeview-inner data-model="model" data-node-id="id" data-node-label="name" data-node-children="children" class="ng-scope"><ul ng-class="{'hide-root':hideRoot===true}" class="ng-scope hide-root"><!-- ngRepeat: node in model --><li data-ng-repeat="node in model" class="ng-scope"><tree-node><span ng-hide="node.isRoot &amp;&amp; hideRoot" class="ng-scope ng-hide"><!-- ngIf: node.collapsed --><!-- ngIf: !node.collapsed --><i class="fa fa-folder-open-o ng-scope" data-ng-if="!node.collapsed" data-ng-click="toggleNode(node)"></i><!-- end ngIf: !node.collapsed --><span data-ng-class="node.selected" data-ng-click="nodeSelected(node)" class="ng-binding">root</span></span></tree-node><!-- ngIf: !node.collapsed --><dam-treeview-inner data-ng-if="!node.collapsed" data-model="node.children" data-node-id="id" data-node-label="name" data-node-children="children" class="ng-scope"><ul ng-class="{'hide-root':hideRoot===true}" class="ng-scope hide-root"><!-- ngRepeat: node in node.children --></ul></dam-treeview-inner><!-- end ngIf: !node.collapsed --></li><!-- end ngRepeat: node in model --></ul></dam-treeview-inner></dam-treeview></div></div></div></span></div>
+  </div>
+</div><!-- end ngIf: showScheduling --></div></accordion></div></div>
+          <!-- uiView:  --><div ui-view="" id="dam-list" dam-toggle-fullscreen="fullscreen" class=""></div>
+          <div id="dam-preview-wrapper" class="visible-lg col-lg-3"><dam-preview class="ng-scope"><div id="dam-preview"><div class="clearfix"><button class="hidden-lg btn btn-default pull-left ng-binding" ng-click="back()"><i class="fa fa-chevron-left"></i> __BACK__</button></div><div x-dam-spinner="" x-ng-show="showSpinner" class="dam-spinner ng-hide"><div class="spinner" style="position: relative; width: 0px; z-index: 100;" role="progressbar"><div style="position: absolute; top: -5px; opacity: 0.25; animation: 1s linear 0s infinite normal none running opacity-60-25-0-13;"><div style="position: absolute; width: 30px; height: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 0%; box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 1px; transform-origin: left center 0px; transform: rotate(0deg) translate(30px); border-radius: 5px;"></div></div><div style="position: absolute; top: -5px; opacity: 0.25; animation: 1s linear 0s infinite normal none running opacity-60-25-1-13;"><div style="position: absolute; width: 30px; height: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 0%; box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 1px; transform-origin: left center 0px; transform: rotate(27deg) translate(30px); border-radius: 5px;"></div></div><div style="position: absolute; top: -5px; opacity: 0.25; animation: 1s linear 0s infinite normal none running opacity-60-25-2-13;"><div style="position: absolute; width: 30px; height: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 0%; box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 1px; transform-origin: left center 0px; transform: rotate(55deg) translate(30px); border-radius: 5px;"></div></div><div style="position: absolute; top: -5px; opacity: 0.25; animation: 1s linear 0s infinite normal none running opacity-60-25-3-13;"><div style="position: absolute; width: 30px; height: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 0%; box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 1px; transform-origin: left center 0px; transform: rotate(83deg) translate(30px); border-radius: 5px;"></div></div><div style="position: absolute; top: -5px; opacity: 0.25; animation: 1s linear 0s infinite normal none running opacity-60-25-4-13;"><div style="position: absolute; width: 30px; height: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 0%; box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 1px; transform-origin: left center 0px; transform: rotate(110deg) translate(30px); border-radius: 5px;"></div></div><div style="position: absolute; top: -5px; opacity: 0.25; animation: 1s linear 0s infinite normal none running opacity-60-25-5-13;"><div style="position: absolute; width: 30px; height: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 0%; box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 1px; transform-origin: left center 0px; transform: rotate(138deg) translate(30px); border-radius: 5px;"></div></div><div style="position: absolute; top: -5px; opacity: 0.25; animation: 1s linear 0s infinite normal none running opacity-60-25-6-13;"><div style="position: absolute; width: 30px; height: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 0%; box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 1px; transform-origin: left center 0px; transform: rotate(166deg) translate(30px); border-radius: 5px;"></div></div><div style="position: absolute; top: -5px; opacity: 0.25; animation: 1s linear 0s infinite normal none running opacity-60-25-7-13;"><div style="position: absolute; width: 30px; height: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 0%; box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 1px; transform-origin: left center 0px; transform: rotate(193deg) translate(30px); border-radius: 5px;"></div></div><div style="position: absolute; top: -5px; opacity: 0.25; animation: 1s linear 0s infinite normal none running opacity-60-25-8-13;"><div style="position: absolute; width: 30px; height: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 0%; box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 1px; transform-origin: left center 0px; transform: rotate(221deg) translate(30px); border-radius: 5px;"></div></div><div style="position: absolute; top: -5px; opacity: 0.25; animation: 1s linear 0s infinite normal none running opacity-60-25-9-13;"><div style="position: absolute; width: 30px; height: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 0%; box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 1px; transform-origin: left center 0px; transform: rotate(249deg) translate(30px); border-radius: 5px;"></div></div><div style="position: absolute; top: -5px; opacity: 0.25; animation: 1s linear 0s infinite normal none running opacity-60-25-10-13;"><div style="position: absolute; width: 30px; height: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 0%; box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 1px; transform-origin: left center 0px; transform: rotate(276deg) translate(30px); border-radius: 5px;"></div></div><div style="position: absolute; top: -5px; opacity: 0.25; animation: 1s linear 0s infinite normal none running opacity-60-25-11-13;"><div style="position: absolute; width: 30px; height: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 0%; box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 1px; transform-origin: left center 0px; transform: rotate(304deg) translate(30px); border-radius: 5px;"></div></div><div style="position: absolute; top: -5px; opacity: 0.25; animation: 1s linear 0s infinite normal none running opacity-60-25-12-13;"><div style="position: absolute; width: 30px; height: 10px; background: rgb(170, 170, 170) none repeat scroll 0% 0%; box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 1px; transform-origin: left center 0px; transform: rotate(332deg) translate(30px); border-radius: 5px;"></div></div></div></div><!-- ngIf: engagementAspect --><!-- If we have onecmsTemplate use the dam-content-preview (domain objects / widgets based) --><!-- ngIf: loaded && onecmsTemplate --><!-- If we DON'T have onecmsTemplate use a custom html --><!-- ngIf: !onecmsTemplate && entry.data.aspects.contentData.data.objectType --><div id="dam-preview-infos"><div class="table-responsive ng-hide" ng-show="entry.data.aspects.contentData.data._type !== undefined &amp;&amp; entry.data.aspects.contentData.data._type !== &quot;atex.dam.standard.Job&quot; &amp;&amp; isserviceinstalled===&quot;true&quot;"><table class="table table-bordered table-condensed"><thead><tr><th data-toggle="true" class="text-mining-table-header ng-binding">__TEXT_MINING__</th></tr></thead><tbody class="text-mining-table-body"><tr ng-show="textMiningLoading===&quot;loading&quot;" class="ng-hide"><td><img src="img/spinner.gif"> Loading Annotation...</td></tr><tr ng-show="textMiningLoading===&quot;init&quot; &amp;&amp; hits === undefined"><td><p class="text-danger"><b><a class="pointer" ng-click="textmining();">Annotate Text</a></b></p></td></tr><tr ng-show="hits === undefined &amp;&amp; textMiningLoading===&quot;end&quot;" class="ng-hide"><td><p class="text-danger"><b>No Annotation Found</b></p></td></tr><!-- ngRepeat: hit in hits --></tbody></table></div><!-- ngIf: !activeView --><span x-ng-if="!activeView" class="ng-scope"><div class="table-responsive ng-hide" ng-show="publevents[0] !== undefined"><table class="table table-bordered table-condensed table-hover"><thead class="table-header"><tr><th data-toggle="true" class="ng-binding">_PAGES_</th></tr></thead><tbody class="table-body"><!-- ngRepeat: publevent in publevents | orderBy:'-pubdate' --></tbody></table></div><div class="table-responsive ng-hide" ng-show="collections.length>0"><table class="table table-bordered table-condensed table-hover"><thead class="table-header"><tr><th data-toggle="true" class="ng-binding">_COLLECTION_LIST_</th></tr></thead><tbody class="table-body"><!-- ngRepeat: collection in collections --></tbody></table></div><div class="table-responsive ng-hide" ng-show="parentsIds.length>0"><table class="table table-bordered table-condensed table-hover"><thead class="table-header"><tr><th data-toggle="true"><span x-ng-show="parentsIds.length==1" class="ng-binding ng-hide">_STORY_</span> <span x-ng-show="parentsIds.length>1" class="ng-binding ng-hide">_STORIES_</span></th></tr></thead><tbody class="table-body"><!-- ngRepeat: parentId in parentsIds --></tbody></table></div><div class="job ng-hide" ng-show="jobs.length>0"><div class="job-div"><span class="job-label ng-binding">__JOB_LABEL__</span></div><!-- ngRepeat: job in jobs --></div><!-- ngIf: originalContent!==undefined --><div ng-show="entry.data.aspects.contentData.data.related &amp;&amp; entry.data.aspects.contentData.data.related.length>0" class="ng-hide"><div class="related-div"><span class="related-label"><a class="related-text" x-ng-click="showRelated(entry.data.aspects.contentData.data.related)">Related Articles</a></span></div><!-- ngRepeat: (key, hit) in entry.data.aspects.contentData.data.related --></div><!-- ngIf: engagementAspect!==undefined && engagementAspect.data.engagementList.length >0 --></span><!-- end ngIf: !activeView --></div></div></dam-preview></div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- ngInclude:  --><div ng-include="" src="'views/dam-print.html'" class="visible-print ng-scope"><div ng-controller="DamPrintController" id="dam-print" class="ng-scope"><!-- ngRepeat: article in articles --><ul><!-- ngRepeat: image in images --></ul><!-- ngIf: missing.length>0 --><!-- ngRepeat: miss in missing --></div></div>
+
+      <script src="webjars/jquery/2.1.1/jquery.min.js"></script>
+      <script src="webjars/jquery-ui/1.10.3/ui/minified/jquery-ui.min.js"></script>
+      <script src="webjars/underscorejs/1.7.0/underscore-min.js"></script>
+      <script src="webjars/angularjs/1.3.1/angular.min.js"></script>
+      <script src="webjars/angularjs/1.3.1/angular-sanitize.min.js"></script>
+      <script src="webjars/angularjs/1.3.1/angular-route.min.js"></script>
+      <script src="webjars/angularjs/1.3.1/angular-resource.min.js"></script>
+      <script src="webjars/angular-ui-bootstrap/0.12.0/ui-bootstrap-tpls.min.js"></script>
+      <script src="webjars/momentjs/2.18.1/min/moment-with-locales.min.js"></script>
+      <script src="webjars/Eonasdan-bootstrap-datetimepicker/4.7.14/bootstrap-datetimepicker.min.js"></script>
+      <script src="lib/moment-tz/0.5.21/moment-timezone-with-data-2012-2022.min.js?v=159315983480237"></script>
+
+      <script src="js/vendor.min.js?v=159315983480237"></script>
+      <script src="js/atex/init.js?v=159315983480237"></script>
+      <script src="webjars/select2/3.5.1/select2.min.js"></script>
+      <script src="webjars/angular-ui-select/0.11.2/select.min.js"></script>
+      <script src="lib/xeditable/xeditable.js?v=159315983480237"></script>
+      <script src="lib/touch/angular-touch.js?v=159315983480237"></script>
+      <script src="webjars/spin-js/1.3.3/spin.js"></script>
+      <script src="lib/mask/jquery.maskedinput.min.js?v=159315983480237"></script>
+      <script src="webjars/angular-ui-router/0.2.14/angular-ui-router.min.js"></script>
+      <script src="webjars/toastr/2.0.1/toastr.min.js"></script>
+      <script src="webjars/toastr/2.0.1/toastr.min.js"></script>
+      <script src="lib/BigInteger.js?v=159315983480237"></script>
+      <script src="lib/FileSaver.js?v=159315983480237"></script>
+      <script src="lib/jszip.js?v=159315983480237"></script>
+      <script src="lib/diff-match-patch/diff_match_patch_uncompressed.js?v=159315983480237"></script>
+      <script src="lib/analytics.js?v=159315983480237"></script>
+
+      <script>
+        angular.element(document).ready(function() {
+          atex.application.initialize(function() {
+            angular.bootstrap(document, ['atex.dam']);
+          }, function(error) {
+            console.log("Error while initializing dm.desk:", error);
+          });
+        });
+        window.atex=window.atex || {};
+        window.atex.analytics=window.atex.analytics||function(){(atex.analytics.q=atex.analytics.q||[]).push(arguments)};atex.analytics.l=+new Date;
+      </script>
+      
+      <script type="text/ng-template" id="layoutTemplate">
+        <ul class="nav nav-pills">
+          <li x-ng-repeat="view in (view || layout).views" x-ng-class="{ 'active': $first }">
+            <a class="dam-nav" href="/#{{view.id}}" data-toggle="pill">{{view.label || '&nbsp;'}}</a>
+          </li>
+        </ul>
+        <div class="tab-content dam-tab-content">
+          <div x-ng-repeat="view in (view || layout).views" x-ng-include="'viewTemplate'" x-ng-class="{ 'active': $first }" id="{{view.id}}" class="tab-pane"></div>
+        </div>
+      </script>
+      <script type="text/ng-template" id="viewTemplate">
+        <div x-ng-if="view.views" x-ng-include="'layoutTemplate'" class="template-layout"></div>
+        <template-field x-ng-repeat="field in view.fields" data-field="field"></template-field>
+      </script>
+      
+      <script type="text/ng-template" id="previewLayoutTemplate">
+        <ul class="nav nav-pills">
+          <li x-ng-repeat="view in (view || layout).views" x-ng-class="{ 'active': $first }">
+            <a class="dam-nav" href="/#{{view.id}}" data-toggle="pill" x-ng-click="updateActiveViewCallback($index);">{{view.label || '&nbsp;'}}</a>
+          </li>
+        </ul>
+        <div class="tab-content dam-tab-content">
+          <div x-ng-repeat="view in (view || layout).views" x-ng-include="'previewViewTemplate'" x-ng-class="{ 'active': $first }" id="{{view.id}}" class="tab-pane"></div>
+        </div>
+      </script>
+      <script type="text/ng-template" id="previewViewTemplate">
+        <div x-ng-if="view.views" x-ng-include="'previewLayoutTemplate'" class="template-layout"></div>
+        <preview-template-field x-ng-repeat="field in view.fields" data-field="field"></preview-template-field>
+      </script>
+
+      <script src="js/all.min.js?v=159315983480237"></script>
+
+      <script src="webjars/angular-translate/2.18.1/angular-translate.min.js"></script>
+      <script src="webjars/angular-translate-loader-static-files/2.18.1/angular-translate-loader-static-files.min.js"></script>
+
+      <!-- onecms libs -->
+      <script src="atex/onecms-theme/3.7.0/js/onecms-theme.min.js"></script>
+      <script src="atex/onecms-lib/4.2.2/onecms-lib-service-angular-4.2.2-min.js"></script>
+      <script src="atex/onecms-lib/4.2.2/onecms-lib-ui-framework-angular-4.2.2-min.js"></script>
+      <script src="webjars/requirejs/2.1.14-3/require.min.js"></script>
+
+    </div>
+  
+
+</div><div class="modal login-modal ng-scope" tabindex="-1" id="onecms-lib-templates-authentication-dialog-2" style="display: none;" aria-hidden="true"><div class="modal-dialog"><div class="modal-content"><form name="authenticationForm" x-form-submit="" data-callback="authenticate" class="ng-valid ng-dirty ng-valid-parse ng-submitted"><div class="modal-header"><button type="button" onclick="return false" x-ng-click="cancel();" x-ng-class="{ 'disabled': busy }" x-ng-disabled="busy" x-ng-hide="mode == 'authenticate'" class="close ng-hide disabled" data-dismiss="modal" aria-hidden="true" disabled="disabled"><i class="icon-remove"></i></button><!-- ngIf: mode == 'confirm' --><!-- ngIf: mode != 'confirm' --><h4 x-ng-if="mode != 'confirm'" class="ng-scope">Please Log In</h4><!-- end ngIf: mode != 'confirm' --><!-- ngIf: message --></div><div class="modal-body"><div class="form-group"><label for="usernameInput" class="sr-only">Username</label><input id="usernameInput" spellcheck="" autocapitalize="off" autocorrect="off" autocomplete="off" class="form-control ng-valid ng-dirty ng-valid-parse ng-touched" x-ng-disabled="mode == 'confirm' || busy" x-autofocus="mode != 'confirm'" name="usernameInput" x-ng-model="usernameInput.value" placeholder="Username" style="" disabled="disabled"></div><div class="form-group" style="margin-bottom: 0"><label for="passwordInput" class="sr-only">Password</label><input id="passwordInput" class="form-control ng-valid ng-dirty ng-valid-parse ng-touched" x-ng-disabled="busy" x-autofocus="mode == 'confirm'" name="passwordInput" x-ng-model="passwordInput.value" type="password" placeholder="Password" style="" disabled="disabled"></div><div x-ng-show="errorMessage" class="alert alert-danger ng-binding ng-hide" style="margin-top: 15px; margin-bottom: 0"></div></div><div class="modal-footer" style="margin-top: 0"><div x-ng-show="busy" class="pull-left modal-status"><span class="onecms-spinner-left">Logging in...</span></div><button class="btn btn-default ng-hide" type="button" onclick="return false" x-ng-click="cancel();" x-ng-disabled="busy" x-ng-hide="mode == 'authenticate'" disabled="disabled">Cancel</button> <button class="btn btn-primary" x-ng-click="authenticate();" x-ng-disabled="!authenticationForm.$valid || usernameInput.value.length == 0 || passwordInput.value.length == 0 || busy" style="" disabled="disabled">Log In</button></div></form></div></div></div><div class="modal info-modal in ng-scope" tabindex="-1" id="views-dam-info-modal-56" style="display: block;" aria-hidden="false"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><h4><span class="ng-binding">Starting dm.desk application...</span></h4></div><div class="modal-footer"><div class="pull-left modal-status"><span class="onecms-spinner-left ng-binding">Loading templates... </span></div></div></div></div></div><div class="modal-backdrop  in"></div></body></html>
