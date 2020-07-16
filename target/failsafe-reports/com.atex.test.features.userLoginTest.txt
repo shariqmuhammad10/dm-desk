@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.atex.test.features.userLoginTest
--------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 35.128 sec - in com.atex.test.features.userLoginTest

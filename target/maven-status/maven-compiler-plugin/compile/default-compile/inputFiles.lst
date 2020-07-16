@@ -1,4 +1,7 @@
-D:\Automation\SerenityPoc123\src\main\java\com\atex\test\actions\WaitActions.java
-D:\Automation\SerenityPoc123\src\main\java\com\atex\test\actions\AbstractPageAction.java
-D:\Automation\SerenityPoc123\src\main\java\com\atex\test\pages\common\deskHomePage.java
-D:\Automation\SerenityPoc123\src\main\java\com\atex\test\pages\common\deskLoginPage.java
+D:\ORIGINAL PROJECT AUTOMATION COPIES\dm_Desk\src\main\java\com\atex\pages\create_new\development_large_article\DevelopmentLargeArticlePage.java
+D:\ORIGINAL PROJECT AUTOMATION COPIES\dm_Desk\src\main\java\com\atex\actions\WaitActions.java
+D:\ORIGINAL PROJECT AUTOMATION COPIES\dm_Desk\src\main\java\com\atex\pages\advance_search\AdvanceSearchPage.java
+D:\ORIGINAL PROJECT AUTOMATION COPIES\dm_Desk\src\main\java\com\atex\actions\AbstractPageAction.java
+D:\ORIGINAL PROJECT AUTOMATION COPIES\dm_Desk\src\main\java\com\atex\pages\login\deskLoginPage.java
+D:\ORIGINAL PROJECT AUTOMATION COPIES\dm_Desk\src\main\java\com\atex\pages\login\deskHomePage.java
+D:\ORIGINAL PROJECT AUTOMATION COPIES\dm_Desk\src\main\java\com\atex\pages\create_new\article\ArticlePage.java

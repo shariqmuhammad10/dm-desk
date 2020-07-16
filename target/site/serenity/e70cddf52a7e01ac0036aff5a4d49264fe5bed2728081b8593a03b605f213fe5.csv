@@ -1,0 +1,6 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Login verification test","Verify unable to login","SUCCESS","2020-07-16T12:04:24.7899622+05:00[Asia/Karachi]","0.0","12.47"
+"Login verification test","Verify login into site","SUCCESS","2020-07-16T12:04:39.2073908+05:00[Asia/Karachi]","0.0","9.6"
+"Login verification test","Test1","IGNORED","2020-07-16T12:04:50.099253+05:00[Asia/Karachi]","0.0","0.51"
+"Login verification test","Test2","IGNORED","2020-07-16T12:04:50.7265756+05:00[Asia/Karachi]","0.0","0.54"
+"Login verification test","Verify login page is appearing","IGNORED","2020-07-16T12:04:51.4037641+05:00[Asia/Karachi]","0.0","0.57"

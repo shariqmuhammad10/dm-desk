@@ -1,1 +1,8 @@
-com\atex\test\features\userLoginTest.class
+com\atex\features\manage_author\ManageAuthorTest.class
+com\atex\features\manage_publishing_schedules\ManagePublishingSchedules.class
+com\atex\steps\create_article_steps\CreateArticleSteps.class
+com\atex\features\article\ArticleTest.class
+com\atex\features\author_login\LoginVerificationTest.class
+com\atex\features\advance_search\AdvanceSearchTest.class
+com\atex\steps\advance_search_steps\AdvanceSearchSteps.class
+com\atex\steps\login_steps\userLoginSteps.class
