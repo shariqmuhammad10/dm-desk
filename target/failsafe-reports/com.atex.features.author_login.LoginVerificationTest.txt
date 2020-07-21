@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.atex.features.author_login.LoginVerificationTest
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 27.655 sec - in com.atex.features.author_login.LoginVerificationTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 82.493 sec - in com.atex.features.author_login.LoginVerificationTest

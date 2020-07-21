@@ -1,4 +1,4 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"Advance search test","Verify clear advance search","SUCCESS","2020-07-16T12:04:25.4162552+05:00[Asia/Karachi]","0.0","33.5"
-"Login verification test","Verify unable to login","SUCCESS","2020-07-16T12:04:24.7899622+05:00[Asia/Karachi]","0.0","12.47"
-"Login verification test","Verify login into site","SUCCESS","2020-07-16T12:04:39.2073908+05:00[Asia/Karachi]","0.0","9.6"
+"Advance search test","Verify clear advance search","SUCCESS","2020-07-21T19:02:24.9999796+05:00[Asia/Karachi]","0.0","87.67"
+"Login verification test","Verify unable to login","SUCCESS","2020-07-21T19:02:20.9208964+05:00[Asia/Karachi]","0.0","35.68"
+"Login verification test","Verify login into site","SUCCESS","2020-07-21T19:03:04.0007096+05:00[Asia/Karachi]","0.0","24.95"

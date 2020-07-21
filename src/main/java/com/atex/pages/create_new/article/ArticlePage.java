@@ -16,8 +16,22 @@ public class ArticlePage extends WaitActions {
     private WebElementFacade createNewDD;
 
 
-    @FindBy(xpath = "//*[@id=\"form-control-widget-7C2F1\"]")
+
+
+    @FindBy(xpath= "/html/body/div[1]/section/form/div[2]/onecms-content-editor/div/ul/li[1]/a")
+    private WebElementFacade generalTab;
+
+
+
+    @FindBy(xpath = "//input[starts-with(@id,'form-control-widget-')]")
     private WebElementFacade articleName;
+
+    //#form-control-widget-
+
+
+
+
+
 
 
 
@@ -47,6 +61,7 @@ public class ArticlePage extends WaitActions {
         articleName.waitUntilVisible();
         articleName.waitUntilPresent();
         articleName.waitUntilClickable();
+        generalTab.click();
         articleName.click();
         articleName.sendKeys("16 July Automation");
 

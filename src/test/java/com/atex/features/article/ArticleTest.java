@@ -36,9 +36,14 @@ public class ArticleTest {
         userLoginSteps.navigateToLoginPage();
         userLoginSteps.loginIntoSite();
         //userLoginSteps.loginPageToLoad();
+        createArticleSteps.storeCurrentWindowHandle();
         createArticleSteps.navigateToCreateNew();
         createArticleSteps.clickOnArticleOption();
+        //createArticleSteps.storeCurrentWindowHandle();
+        createArticleSteps.getChildWindowHandle();
+
         createArticleSteps.clickOnArticleFieldName();
+        //createArticleSteps.switchToChildWindow();
 
 
 
