@@ -4,13 +4,13 @@ import com.atex.pages.advance_search.AdvanceSearchPage;
 import com.atex.pages.create_new.article.ArticlePage;
 import com.atex.steps.advance_search_steps.AdvanceSearchSteps;
 import net.thucydides.core.annotations.Step;
-import net.thucydides.core.annotations.Steps;
 import net.thucydides.core.steps.ScenarioSteps;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.util.Iterator;
 import java.util.Set;
+
+import static org.junit.Assert.assertTrue;
 
 public class CreateArticleSteps extends ScenarioSteps {
     private static final Logger logger = LoggerFactory.getLogger(AdvanceSearchSteps.class);
@@ -39,8 +39,13 @@ public class CreateArticleSteps extends ScenarioSteps {
     }
 
     @Step
-    public void clickOnArticleFieldName() {
-        articlePage.setArticleName();
+    public void setArticleName1() {
+        articlePage.getArticleName();
+    }
+
+    @Step
+    public void setArticleName() {
+        articlePage.setArticleNameFieldValue();
     }
 
 
@@ -80,5 +85,16 @@ public class CreateArticleSteps extends ScenarioSteps {
 
 
 
+    }
+
+    @Step
+    public void clickOnSaveButton() {
+        articlePage.saveArticle();
+
+    }
+
+    @Step
+    public void verifyArticleCloseButtonIsVisible() {
+        assertTrue(articlePage.closeButtonIsVisible());
     }
 }

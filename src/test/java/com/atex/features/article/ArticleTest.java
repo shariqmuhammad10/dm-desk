@@ -39,13 +39,15 @@ public class ArticleTest {
         createArticleSteps.storeCurrentWindowHandle();
         createArticleSteps.navigateToCreateNew();
         createArticleSteps.clickOnArticleOption();
-        //createArticleSteps.storeCurrentWindowHandle();
+        //createArticleSteps.clickOnArticleFieldName();
+        createArticleSteps.storeCurrentWindowHandle();
         createArticleSteps.getChildWindowHandle();
 
-        createArticleSteps.clickOnArticleFieldName();
-        //createArticleSteps.switchToChildWindow();
-
-
+        //createArticleSteps.setArticleName1();  //setting the Faker name
+        createArticleSteps.setArticleName();
+        createArticleSteps.clickOnSaveButton();
+        createArticleSteps.verifyArticleCloseButtonIsVisible();
+        //createArticleSteps.switchToChildWindow()
 
         //advanceSearchSteps.pressSearchBtn();
         //advanceSearchSteps.verifyAutomatedArticleDisplayed();

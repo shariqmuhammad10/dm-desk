@@ -151,7 +151,7 @@
             <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 21-07-2020 19:02</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 22-07-2020 15:58</span>
     <br style="clear:left"/>
 </div>
 
@@ -211,7 +211,7 @@
         <div class="table">
             <div class="row">
                 <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
-                    <span class="error-message error-message-title">No such element exception: Expected condition failed: waiting for ArticlePage.articleName to be displayed (tried for 15 second(s) with 100 milliseconds interval)Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'System info: host: 'CRKRL-MUHAMSHA1', ip: '172.27.249.239', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'Driver info: driver.version: unknown</span>
+                    <span class="error-message error-message-title">Element click intercepted exception: Element (a class='btn btn-default btn-sm pull-left ng-binding') is not clickable at point (87,74) because another element (div class='btn-group pull-left') obscures it</span>
                 </div>
                 <div class="col-sm-2">
                     <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
@@ -227,20 +227,13 @@
         <div class="collapse multi-collapse" id="stacktraceModal-overall">
             <div class="card">
                 <div class="card-header">
-                    <h4>org.openqa.selenium.NoSuchElementException </h4>
+                    <h4>org.openqa.selenium.ElementClickInterceptedException </h4>
                 </div>
                 <div class="card-body">
                     <div>
-                        <pre>com.atex.pages.create_new.article.ArticlePage.setArticleName(ArticlePage.java:57)<br />com.atex.steps.create_article_steps.CreateArticleSteps.clickOnArticleFieldName(CreateArticleSteps.java:43)<br />com.atex.features.article.ArticleTest.createNewArticle(ArticleTest.java:45)<br /></pre>
+                        <pre>com.atex.pages.create_new.article.ArticlePage.saveArticle(ArticlePage.java:92)<br />com.atex.steps.create_article_steps.CreateArticleSteps.clickOnSaveButton(CreateArticleSteps.java:90)<br />com.atex.features.article.ArticleTest.createNewArticle(ArticleTest.java:49)<br /></pre>
                     </div>
 
-                    <h4>
-                        Caused by: org.openqa.selenium.TimeoutException
-                    </h4>
-                    <div>
-                            <pre>Expected condition failed: waiting for ArticlePage.articleName to be displayed (tried for 15 second(s) with 100 milliseconds interval)<br>Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'<br>System info: host: 'CRKRL-MUHAMSHA1', ip: '172.27.249.239', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'<br>Driver info: driver.version: unknown</pre>
-                        <pre>com.atex.pages.create_new.article.ArticlePage.setArticleName(ArticlePage.java :57)<br />com.atex.steps.create_article_steps.CreateArticleSteps.clickOnArticleFieldName(CreateArticleSteps.java :43)<br />com.atex.features.article.ArticleTest.createNewArticle(ArticleTest.java :45)<br /></pre>
-                    </div>
                 </div>
             </div>
         </div>
@@ -248,12 +241,12 @@
 
 
                 <div class="panel-body">
-                    <a href="pagesource5109219175664381041.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                    <a href="pagesource3016469908705725586.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
                 </div>
             </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
-                <img src="e142cc4eebe4a11e76c8d38e3cdb328a8870e2bbdc3a6c0c737b80ca57037cb7.png" title=" Click on article field name: <span class='error-color'>ERROR</span>" width="1902"/>
+                <img src="193f51cef7db15d8fa41862f4c86ecfc1e26e3095d73da85611581718cbdb898.png" title=" Click on save button: <span class='error-color'>ERROR</span>" width="1902"/>
             </div>
         </div>
 
