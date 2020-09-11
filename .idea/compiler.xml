@@ -11,7 +11,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="Atex-automated-tests" target="1.8" />
+      <module name="Atex-automated-tests" target="14" />
       <module name="wlcms-automated-tests" target="1.8" />
     </bytecodeTargetLevel>
   </component>

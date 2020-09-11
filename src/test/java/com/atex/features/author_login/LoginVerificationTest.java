@@ -3,6 +3,7 @@ package com.atex.features.author_login;
 import net.serenitybdd.junit.runners.SerenityRunner;
 import net.thucydides.core.annotations.Managed;
 import net.thucydides.core.annotations.Steps;
+import net.thucydides.core.annotations.WithTag;
 import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -31,6 +32,7 @@ public class LoginVerificationTest {
         userLoginSteps.navigateToLoginPage();
 
     }
+    @WithTag(type = "release", name = "smoke-test")
 
     @Test
     public void VerifyLoginIntoSite(){
@@ -40,6 +42,7 @@ public class LoginVerificationTest {
 
     }
 
+    @WithTag(type = "release", name = "smoke-test")
     @Test
     public void VerifyUnableToLogin(){
 

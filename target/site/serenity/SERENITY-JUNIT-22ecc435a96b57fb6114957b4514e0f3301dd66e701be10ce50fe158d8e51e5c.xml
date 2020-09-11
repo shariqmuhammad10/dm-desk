@@ -1,1 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="com.atex.features.article.ArticleTest" skipped="0" tests="1" time="73.93" timestamp="2020-07-22 04:19:50"><testcase classname="com.atex.features.article.ArticleTest" name="Create new article"/></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="com.atex.features.article.ArticleTest" skipped="0" tests="1" time="70.26" timestamp="2020-09-10 03:11:10"><testcase classname="com.atex.features.article.ArticleTest" name="Create new article"/></testsuite>

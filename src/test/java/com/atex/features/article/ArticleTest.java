@@ -5,6 +5,7 @@ import com.atex.steps.login_steps.userLoginSteps;
 import net.serenitybdd.junit.runners.SerenityRunner;
 import net.thucydides.core.annotations.Managed;
 import net.thucydides.core.annotations.Steps;
+import net.thucydides.core.annotations.WithTag;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
@@ -29,11 +30,11 @@ public class ArticleTest {
     @Steps
     CreateArticleSteps createArticleSteps;
 
-
+    @WithTag(type = "release", name = "smoke-test")
     @Test
 
     public void createNewArticle() {
-        userLoginSteps.navigateToLoginPage();
+        userLoginSteps.navigateToLoginPage();   
         userLoginSteps.loginIntoSite();
         //userLoginSteps.loginPageToLoad();
         createArticleSteps.storeCurrentWindowHandle();
