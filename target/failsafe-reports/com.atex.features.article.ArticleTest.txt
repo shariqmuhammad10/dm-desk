@@ -1,4 +1,18 @@
 -------------------------------------------------------------------------------
 Test set: com.atex.features.article.ArticleTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 70.626 sec - in com.atex.features.article.ArticleTest
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 40.39 sec <<< FAILURE! - in com.atex.features.article.ArticleTest
+createNewArticle(com.atex.features.article.ArticleTest)  Time elapsed: 40.39 sec  <<< ERROR!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <a class="dropdown-toggle" data-toggle="dropdown">...</a> is not clickable at point (883, 25). Other element would receive the click: <div class="modal-backdrop  in"></div>
+  (Session info: chrome=85.0.4183.102)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CRKRL-MUHAMSHA1', ip: '172.27.251.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.102, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\SMUHAM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62484}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 35d40ff327ba8923659a1e50423e464d
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CRKRL-MUHAMSHA1', ip: '172.27.251.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
+Driver info: driver.version: unknown
+	at com.atex.features.article.ArticleTest.createNewArticle(ArticleTest.java:41)
+

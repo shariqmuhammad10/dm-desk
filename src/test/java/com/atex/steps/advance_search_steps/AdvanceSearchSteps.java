@@ -1,6 +1,8 @@
 package com.atex.steps.advance_search_steps;
 
 import com.atex.pages.advance_search.AdvanceSearchPage;
+import com.atex.pages.login.DeskHomePage;
+import com.atex.pages.login.DeskLoginPage;
 import net.thucydides.core.annotations.Step;
 import net.thucydides.core.steps.ScenarioSteps;
 import org.slf4j.Logger;
@@ -14,8 +16,8 @@ public class AdvanceSearchSteps extends ScenarioSteps {
     private static final Logger logger = LoggerFactory.getLogger(AdvanceSearchSteps.class);
 
 
-        com.atex.pages.login.deskLoginPage deskLoginPage;
-        com.atex.pages.login.deskHomePage deskHomePage;
+        DeskLoginPage deskLoginPage;
+        DeskHomePage deskHomePage;
         AdvanceSearchPage advanceSearchPage;
 
         @Step

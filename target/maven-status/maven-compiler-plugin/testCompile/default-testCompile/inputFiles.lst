@@ -4,5 +4,8 @@ D:\ORIGINAL PROJECT AUTOMATION COPIES\dm_Desk\src\test\java\com\atex\steps\advan
 D:\ORIGINAL PROJECT AUTOMATION COPIES\dm_Desk\src\test\java\com\atex\steps\login_steps\userLoginSteps.java
 D:\ORIGINAL PROJECT AUTOMATION COPIES\dm_Desk\src\test\java\com\atex\steps\create_article_steps\CreateArticleSteps.java
 D:\ORIGINAL PROJECT AUTOMATION COPIES\dm_Desk\src\test\java\com\atex\features\author_login\LoginVerificationTest.java
+D:\ORIGINAL PROJECT AUTOMATION COPIES\dm_Desk\src\test\java\com\atex\steps\userDDsteps\notification_steps\NotificationSteps.java
 D:\ORIGINAL PROJECT AUTOMATION COPIES\dm_Desk\src\test\java\com\atex\features\article\ArticleTest.java
 D:\ORIGINAL PROJECT AUTOMATION COPIES\dm_Desk\src\test\java\com\atex\features\manage_publishing_schedules\ManagePublishingSchedules.java
+D:\ORIGINAL PROJECT AUTOMATION COPIES\dm_Desk\src\test\java\com\atex\features\UserDD\logout\LogoutTest.java
+D:\ORIGINAL PROJECT AUTOMATION COPIES\dm_Desk\src\test\java\com\atex\steps\userDDsteps\logout_steps\LogoutSteps.java

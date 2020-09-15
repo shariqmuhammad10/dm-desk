@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.atex.features.article.ArticleTest" time="70.626" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.atex.features.article.ArticleTest" time="40.39" tests="1" errors="1" skipped="0" failures="0">
   <properties>
     <property name="idea.version" value="2020.2.1"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -18,6 +18,7 @@
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="user.dir" value="D:\ORIGINAL PROJECT AUTOMATION COPIES\dm_Desk"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="webdriver.driver" value="chrome"/>
     <property name="java.runtime.version" value="14.0.1+7"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.io.tmpdir" value="C:\Users\SMUHAM~1\AppData\Local\Temp\"/>
@@ -28,13 +29,12 @@
     <property name="maven.ext.class.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2020.2.1\plugins\maven\lib\maven-event-listener.jar"/>
     <property name="classworlds.conf" value="C:\Program Files\JetBrains\IntelliJ IDEA 2020.2.1\plugins\maven\lib\maven3\bin\m2.conf"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk-14.0.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Microsoft MPI\Bin\;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files\dotnet\;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;C:\Users\smuhammad\AppData\Local\Android\Sdk\platform-tools;C:\Program Files\nodejs\;D:\bin;D:\Workspace\geckodriver;D:\Software\Maven\apache-maven-3.6.3\bin;C:\Program Files\Git\cmd;C:\Users\smuhammad\AppData\Local\Microsoft\WindowsApps;C:\Users\smuhammad\.dotnet\tools;C:\Users\smuhammad\AppData\Roaming\npm;D:\Microsoft VS Code\bin;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-14.0.1\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Microsoft MPI\Bin\;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files\dotnet\;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;C:\Users\smuhammad\AppData\Local\Android\Sdk\platform-tools;C:\Program Files\nodejs\;D:\bin;D:\Workspace\geckodriver;D:\Software\Maven\apache-maven-3.6.3\bin;C:\Program Files\Git\cmd;C:\Users\smuhammad\AppData\Local\Microsoft\WindowsApps;C:\Users\smuhammad\.dotnet\tools;C:\Users\smuhammad\AppData\Local\Android\Sdk\platform-tools;C:\Users\smuhammad\AppData\Roaming\npm;D:\Microsoft VS Code\bin;."/>
     <property name="maven.conf" value="C:\Program Files\JetBrains\IntelliJ IDEA 2020.2.1\plugins\maven\lib\maven3/conf"/>
     <property name="jdk.debug" value="release"/>
     <property name="java.class.version" value="58.0"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="webdriver.remote.driver" value="chrome"/>
     <property name="os.version" value="10.0"/>
     <property name="user.home" value="C:\Users\smuhammad"/>
     <property name="tags" value="release:smoke-test"/>
@@ -45,7 +45,7 @@
     <property name="java.class.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2020.2.1\plugins\maven\lib\maven3\boot\plexus-classworlds-2.6.0.jar;C:\Program Files\JetBrains\IntelliJ IDEA 2020.2.1\plugins\maven\lib\maven3\boot\plexus-classworlds.license"/>
     <property name="java.vm.specification.version" value="14"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2020.2.1 clean verify -Dwebdriver.remote.driver=chrome -Dtags=release:smoke-test"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2020.2.1 clean verify -Dwebdriver.driver=chrome -Dtags=release:smoke-test"/>
     <property name="java.home" value="C:\Program Files\Java\jdk-14.0.1"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
@@ -60,5 +60,83 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="createNewArticle" classname="com.atex.features.article.ArticleTest" time="70.626"/>
+  <testcase name="createNewArticle" classname="com.atex.features.article.ArticleTest" time="40.39">
+    <error message="element click intercepted: Element &lt;a class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot;&gt;...&lt;/a&gt; is not clickable at point (883, 25). Other element would receive the click: &lt;div class=&quot;modal-backdrop  in&quot;&gt;&lt;/div&gt;&#10;  (Session info: chrome=85.0.4183.102)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;CRKRL-MUHAMSHA1&apos;, ip: &apos;172.27.251.100&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.1&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.102, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\SMUHAM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62484}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: 35d40ff327ba8923659a1e50423e464d&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;CRKRL-MUHAMSHA1&apos;, ip: &apos;172.27.251.100&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.1&apos;&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <a class="dropdown-toggle" data-toggle="dropdown">...</a> is not clickable at point (883, 25). Other element would receive the click: <div class="modal-backdrop  in"></div>
+  (Session info: chrome=85.0.4183.102)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CRKRL-MUHAMSHA1', ip: '172.27.251.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.102, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\SMUHAM~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62484}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 35d40ff327ba8923659a1e50423e464d
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'CRKRL-MUHAMSHA1', ip: '172.27.251.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
+Driver info: driver.version: unknown
+	at com.atex.features.article.ArticleTest.createNewArticle(ArticleTest.java:41)
+]]></error>
+    <system-err><![CDATA[[pool-1-thread-2] ERROR net.thucydides.core.steps.StepEventBus - Could not instantiate listener 
+java.util.ServiceConfigurationError: net.thucydides.core.steps.StepListener: Provider net.serenitybdd.plugins.jira.JiraStepListener could not be instantiated
+	at java.base/java.util.ServiceLoader.fail(ServiceLoader.java:584)
+	at java.base/java.util.ServiceLoader$ProviderImpl.newInstance(ServiceLoader.java:806)
+	at java.base/java.util.ServiceLoader$ProviderImpl.get(ServiceLoader.java:724)
+	at java.base/java.util.ServiceLoader$3.next(ServiceLoader.java:1396)
+	at net.thucydides.core.steps.StepEventBus.getCustomListeners(StepEventBus.java:207)
+	at net.thucydides.core.steps.StepEventBus.getAllListeners(StepEventBus.java:192)
+	at net.thucydides.core.steps.StepEventBus.testSuiteStarted(StepEventBus.java:229)
+	at net.thucydides.junit.listeners.JUnitStepListener.startTestSuiteForFirstTest(JUnitStepListener.java:90)
+	at net.thucydides.junit.listeners.JUnitStepListener.testStarted(JUnitStepListener.java:78)
+	at org.junit.runner.notification.SynchronizedRunListener.testStarted(SynchronizedRunListener.java:49)
+	at org.junit.runner.notification.RunNotifier$3.notifyListener(RunNotifier.java:121)
+	at org.junit.runner.notification.RunNotifier$SafeNotifier.run(RunNotifier.java:72)
+	at org.junit.runner.notification.RunNotifier.fireTestStarted(RunNotifier.java:118)
+	at org.apache.maven.surefire.common.junit4.Notifier.fireTestStarted(Notifier.java:100)
+	at org.junit.internal.runners.model.EachTestNotifier.fireTestStarted(EachTestNotifier.java:42)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:323)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at net.serenitybdd.junit.runners.SerenityRunner.performRunChild(SerenityRunner.java:464)
+	at net.serenitybdd.junit.runners.SerenityRunner.runChild(SerenityRunner.java:438)
+	at net.serenitybdd.junit.runners.SerenityRunner.runChild(SerenityRunner.java:45)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.apache.maven.surefire.junitcore.pc.Scheduler$1.run(Scheduler.java:393)
+	at org.apache.maven.surefire.junitcore.pc.InvokerStrategy.schedule(InvokerStrategy.java:54)
+	at org.apache.maven.surefire.junitcore.pc.Scheduler.schedule(Scheduler.java:352)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at net.serenitybdd.junit.runners.SerenityRunner.run(SerenityRunner.java:242)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.apache.maven.surefire.junitcore.pc.Scheduler$1.run(Scheduler.java:393)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class net.serenitybdd.plugins.jira.workflow.ClasspathWorkflowLoader
+	at net.serenitybdd.plugins.jira.workflow.ClasspathWorkflowLoader$$FastClassByGuice$$72b186d0.newInstance(<generated>)
+	at com.google.inject.internal.DefaultConstructionProxyFactory$FastClassProxy.newInstance(DefaultConstructionProxyFactory.java:89)
+	at com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:114)
+	at com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:91)
+	at com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:306)
+	at com.google.inject.internal.FactoryProxy.get(FactoryProxy.java:62)
+	at com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1050)
+	at com.google.inject.internal.InjectorImpl.getInstance(InjectorImpl.java:1086)
+	at net.serenitybdd.plugins.jira.JiraStepListener.<init>(JiraStepListener.java:53)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at java.base/java.util.ServiceLoader$ProviderImpl.newInstance(ServiceLoader.java:782)
+	... 36 more
+Sep 15, 2020 11:10:51 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+[pool-1-thread-2] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
+[pool-1-thread-2] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [], extensions: []}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, version: }
+Starting ChromeDriver 85.0.4183.87 (cd6713ebf92fa1cacc0f1a598df280093af0c5d7-refs/branch-heads/4183@{#1689}) on port 41604Only local connections are allowed.Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.ChromeDriver was started successfully.Sep 15, 2020 11:10:58 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
 </testsuite>

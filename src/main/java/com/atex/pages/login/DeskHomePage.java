@@ -7,7 +7,7 @@ import org.openqa.selenium.support.FindBy;
 /**
  * Created by omii on 8/17/2016.
  */
-public class deskHomePage extends WaitActions {
+public class DeskHomePage extends WaitActions {
 
     @FindBy (id = "btnLogout")
     private WebElementFacade homePageTitle;
@@ -31,6 +31,9 @@ public class deskHomePage extends WaitActions {
 
     @FindBy (linkText = "LEARNING AUTOMATION USING SELENIUM")
     private WebElementFacade articleName;
+
+    @FindBy(xpath = "//*[@id=\"dam-header\"]/div/div[2]/ul/li[3]/a")
+    private WebElementFacade userNameDD;
 
 
 
@@ -81,7 +84,17 @@ public class deskHomePage extends WaitActions {
         return articleName.isDisplayed();
     }
 
+    public void clickOnUserDD() {
 
+        waitUntilLoaded(userNameDD);
+        userNameDD.waitUntilEnabled();
+        userNameDD.waitUntilClickable();
+        waitFor(userNameDD);
+        waitABit(15000);
+        //articleList.waitUntilVisible();
+        userNameDD.click();
+
+    }
 
 
 }

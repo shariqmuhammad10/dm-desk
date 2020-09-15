@@ -1,9 +1,10 @@
 com\atex\actions\WaitActions$2.class
+com\atex\pages\login\DeskHomePage.class
+com\atex\pages\users\logout\LogoutPage.class
 com\atex\pages\advance_search\AdvanceSearchPage.class
 com\atex\actions\WaitActions.class
-com\atex\pages\login\deskHomePage.class
 com\atex\pages\create_new\development_large_article\DevelopmentLargeArticlePage.class
 com\atex\actions\AbstractPageAction.class
 com\atex\actions\WaitActions$1.class
-com\atex\pages\login\deskLoginPage.class
+com\atex\pages\login\DeskLoginPage.class
 com\atex\pages\create_new\article\ArticlePage.class

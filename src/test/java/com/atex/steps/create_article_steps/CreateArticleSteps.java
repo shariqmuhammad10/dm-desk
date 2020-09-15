@@ -2,6 +2,8 @@ package com.atex.steps.create_article_steps;
 
 import com.atex.pages.advance_search.AdvanceSearchPage;
 import com.atex.pages.create_new.article.ArticlePage;
+import com.atex.pages.login.DeskHomePage;
+import com.atex.pages.login.DeskLoginPage;
 import com.atex.steps.advance_search_steps.AdvanceSearchSteps;
 import net.thucydides.core.annotations.Step;
 import net.thucydides.core.steps.ScenarioSteps;
@@ -16,8 +18,8 @@ public class CreateArticleSteps extends ScenarioSteps {
     private static final Logger logger = LoggerFactory.getLogger(AdvanceSearchSteps.class);
 
 
-    com.atex.pages.login.deskLoginPage deskLoginPage;
-    com.atex.pages.login.deskHomePage deskHomePage;
+    DeskLoginPage deskLoginPage;
+    DeskHomePage deskHomePage;
     AdvanceSearchPage advanceSearchPage;
     ArticlePage articlePage;
 

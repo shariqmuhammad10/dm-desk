@@ -32,7 +32,7 @@ public class LoginVerificationTest {
         userLoginSteps.navigateToLoginPage();
 
     }
-    @WithTag(type = "release", name = "smoke-test")
+    //@WithTag(type = "release", name = "smoke-test")
 
     @Test
     public void VerifyLoginIntoSite(){
@@ -42,7 +42,7 @@ public class LoginVerificationTest {
 
     }
 
-    @WithTag(type = "release", name = "smoke-test")
+    //@WithTag(type = "release", name = "smoke-test")
     @Test
     public void VerifyUnableToLogin(){
 

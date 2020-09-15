@@ -9,7 +9,7 @@ import org.openqa.selenium.support.FindBy;
  */
 
 //@DefaultUrl("")
-public class deskLoginPage extends WaitActions {
+public class DeskLoginPage extends WaitActions {
 
 
     @FindBy(id = "dm.desk")

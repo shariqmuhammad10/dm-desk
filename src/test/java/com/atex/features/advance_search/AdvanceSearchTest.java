@@ -27,7 +27,7 @@ public class AdvanceSearchTest {
         @Steps
         AdvanceSearchSteps advanceSearchSteps;
 
-        @WithTag(type = "release", name = "smoke-test")
+        //@WithTag(type = "release", name = "smoke-test")
         @Test
 
         public void verifyClearAdvanceSearch() {

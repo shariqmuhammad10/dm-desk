@@ -1,6 +1,9 @@
 com\atex\features\manage_author\ManageAuthorTest.class
 com\atex\features\manage_publishing_schedules\ManagePublishingSchedules.class
+com\atex\steps\userDDsteps\notification_steps\NotificationSteps.class
+com\atex\features\UserDD\logout\LogoutTest.class
 com\atex\steps\create_article_steps\CreateArticleSteps.class
+com\atex\steps\userDDsteps\logout_steps\LogoutSteps.class
 com\atex\features\article\ArticleTest.class
 com\atex\features\author_login\LoginVerificationTest.class
 com\atex\features\advance_search\AdvanceSearchTest.class

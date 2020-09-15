@@ -30,13 +30,9 @@ public class ArticlePage extends WaitActions {
     @FindBy(xpath = "/html/body/div[1]/section/div/div/div[1]/a")
     private WebElementFacade articleSaveButton;
 
-    @FindBy(tagName = "/html/body/div[1]/section/div/div/div[1]/a")
-    private WebElementFacade articleSaveButton1;
+    //@FindBy(tagName = "/html/body/div[1]/section/div/div/div[1]/a")
+    //private WebElementFacade articleSaveButton1;
 
-
-
-
-    //#form-control-widget-
 
 
     public void clickOnCreateNewDD() {

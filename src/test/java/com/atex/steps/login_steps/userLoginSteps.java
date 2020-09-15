@@ -1,6 +1,7 @@
 package com.atex.steps.login_steps;
 
-import com.google.inject.internal.cglib.proxy.$LazyLoader;
+import com.atex.pages.login.DeskHomePage;
+import com.atex.pages.login.DeskLoginPage;
 import net.thucydides.core.annotations.Step;
 import net.thucydides.core.steps.ScenarioSteps;
 
@@ -16,8 +17,8 @@ public class userLoginSteps extends ScenarioSteps {
     private static final Logger logger = LoggerFactory.getLogger(userLoginSteps.class);
 
 
-    com.atex.pages.login.deskLoginPage deskLoginPage;
-    com.atex.pages.login.deskHomePage deskHomePage;
+    DeskLoginPage deskLoginPage;
+    DeskHomePage deskHomePage;
 
     @Step
     public void navigateToLoginPage(){

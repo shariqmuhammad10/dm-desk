@@ -2,6 +2,7 @@ D:\ORIGINAL PROJECT AUTOMATION COPIES\dm_Desk\src\main\java\com\atex\pages\creat
 D:\ORIGINAL PROJECT AUTOMATION COPIES\dm_Desk\src\main\java\com\atex\actions\WaitActions.java
 D:\ORIGINAL PROJECT AUTOMATION COPIES\dm_Desk\src\main\java\com\atex\pages\advance_search\AdvanceSearchPage.java
 D:\ORIGINAL PROJECT AUTOMATION COPIES\dm_Desk\src\main\java\com\atex\actions\AbstractPageAction.java
-D:\ORIGINAL PROJECT AUTOMATION COPIES\dm_Desk\src\main\java\com\atex\pages\login\deskLoginPage.java
-D:\ORIGINAL PROJECT AUTOMATION COPIES\dm_Desk\src\main\java\com\atex\pages\login\deskHomePage.java
+D:\ORIGINAL PROJECT AUTOMATION COPIES\dm_Desk\src\main\java\com\atex\pages\login\DeskLoginPage.java
+D:\ORIGINAL PROJECT AUTOMATION COPIES\dm_Desk\src\main\java\com\atex\pages\login\DeskHomePage.java
+D:\ORIGINAL PROJECT AUTOMATION COPIES\dm_Desk\src\main\java\com\atex\pages\users\logout\LogoutPage.java
 D:\ORIGINAL PROJECT AUTOMATION COPIES\dm_Desk\src\main\java\com\atex\pages\create_new\article\ArticlePage.java
