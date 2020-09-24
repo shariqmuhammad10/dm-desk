@@ -3,7 +3,7 @@ package com.atex.features.UserDD.logout;
 
 import com.atex.steps.advance_search_steps.AdvanceSearchSteps;
 import com.atex.steps.create_article_steps.CreateArticleSteps;
-import com.atex.steps.login_steps.userLoginSteps;
+import com.atex.steps.login_steps.UserLoginSteps;
 import com.atex.steps.userDDsteps.logout_steps.LogoutSteps;
 import net.serenitybdd.junit.runners.SerenityRunner;
 import net.thucydides.core.annotations.Managed;
@@ -23,7 +23,7 @@ public class LogoutTest {
 
 
     @Steps
-    com.atex.steps.login_steps.userLoginSteps userLoginSteps;
+    UserLoginSteps userLoginSteps;
 
     @Steps
     AdvanceSearchSteps advanceSearchSteps;

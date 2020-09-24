@@ -1,7 +1,7 @@
 package com.atex.features.article;
 import com.atex.steps.advance_search_steps.AdvanceSearchSteps;
 import com.atex.steps.create_article_steps.CreateArticleSteps;
-import com.atex.steps.login_steps.userLoginSteps;
+import com.atex.steps.login_steps.UserLoginSteps;
 import net.serenitybdd.junit.runners.SerenityRunner;
 import net.thucydides.core.annotations.Managed;
 import net.thucydides.core.annotations.Steps;
@@ -22,7 +22,7 @@ public class ArticleTest {
 
 
     @Steps
-    userLoginSteps userLoginSteps;
+    UserLoginSteps userLoginSteps;
 
     @Steps
     AdvanceSearchSteps advanceSearchSteps;

@@ -13,8 +13,8 @@ import static org.junit.Assert.assertTrue;
 /**
  * Created by omii on 8/17/2016.
  */
-public class userLoginSteps extends ScenarioSteps {
-    private static final Logger logger = LoggerFactory.getLogger(userLoginSteps.class);
+public class UserLoginSteps extends ScenarioSteps {
+    private static final Logger logger = LoggerFactory.getLogger(UserLoginSteps.class);
 
 
     DeskLoginPage deskLoginPage;

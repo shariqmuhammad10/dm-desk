@@ -1,10 +1,9 @@
 package com.atex.features.advance_search;
 import com.atex.steps.advance_search_steps.AdvanceSearchSteps;
-import com.atex.steps.login_steps.userLoginSteps;
+import com.atex.steps.login_steps.UserLoginSteps;
 import net.serenitybdd.junit.runners.SerenityRunner;
 import net.thucydides.core.annotations.Managed;
 import net.thucydides.core.annotations.Steps;
-import net.thucydides.core.annotations.WithTag;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
@@ -21,7 +20,7 @@ public class AdvanceSearchTest {
 
 
         @Steps
-        userLoginSteps userLoginSteps;
+        UserLoginSteps userLoginSteps;
 
 
         @Steps

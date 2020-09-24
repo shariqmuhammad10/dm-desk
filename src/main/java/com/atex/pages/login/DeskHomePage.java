@@ -36,6 +36,10 @@ public class DeskHomePage extends WaitActions {
     private WebElementFacade userNameDD;
 
 
+    @FindBy (css = "i.fa.fa-arrows-alt.fa-inverse")
+    private WebElementFacade maximizeOption;
+
+
 
     @FindBy (css = "button.navbar-toggle.dam-menu-btn.hidden-lg.visible-md.visible-sm.visible-xs")
     private WebElementFacade navigationLeftMenu;
@@ -97,4 +101,10 @@ public class DeskHomePage extends WaitActions {
     }
 
 
+    public void clickOnMaximizePage() {
+        waitUntilLoaded(maximizeOption);
+        maximizeOption.waitUntilClickable();
+        waitABit(20000);
+        maximizeOption.click();
+    }
 }

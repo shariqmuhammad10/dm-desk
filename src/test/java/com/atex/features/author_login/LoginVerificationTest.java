@@ -1,9 +1,9 @@
 package com.atex.features.author_login;
 
+import com.atex.steps.login_steps.UserLoginSteps;
 import net.serenitybdd.junit.runners.SerenityRunner;
 import net.thucydides.core.annotations.Managed;
 import net.thucydides.core.annotations.Steps;
-import net.thucydides.core.annotations.WithTag;
 import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -24,7 +24,7 @@ public class LoginVerificationTest {
 
 
     @Steps
-    com.atex.steps.login_steps.userLoginSteps userLoginSteps;
+    UserLoginSteps userLoginSteps;
 
     @Ignore
     @Test
